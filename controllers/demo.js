@@ -23,6 +23,10 @@ const getActores = (req = request, res = response) => {
     res.json({name: 'Actores'});
 }
 
+const getGeneros = (req = request, res = response) => {
+    res.json({name: 'Generos'});
+}
+
 const getOrigenNombre = (req = request, res = response) => {
     console.log(req.params);
     const { name } = req.params;
@@ -56,5 +60,6 @@ module.exports = {
     getEstrenos,
     getActores,
     getPelicula,
-    getOrigenNombre
+    getOrigenNombre,
+    getGeneros
 };
